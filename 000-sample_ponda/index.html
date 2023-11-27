@@ -10,12 +10,12 @@
     <a-scene embedded arjs vr-mode-ui="enabled: false">
       <a-assets>
         <!-- 3Dモデルを読み込む -->
-        <a-asset-item id="ponda_2" src="ponda.glb"></a-asset-item>
+        <a-asset-item id="ponda" src="ponda.glb"></a-asset-item>
       </a-assets>
       <!-- マーカーを設定する -->
-      <a-marker type="pattern" url="hiro.patt">
+      <a-marker type="pattern" url="3D_SCAN_AR.patt">
         <!-- 3Dモデルを呼び出す -->
-        <a-entity gltf-model="#ponda_2" rotation="0 0 0" scale="1 1 1"></a-entity>
+        <a-entity gltf-model="#ponda" rotation="0 0 0" scale="1 1 1"></a-entity>
       </a-marker>
       <!-- カメラを追加 -->
       <a-entity camera></a-entity>
